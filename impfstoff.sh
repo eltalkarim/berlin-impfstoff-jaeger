@@ -6,26 +6,26 @@ case $id in
 
 arena)  echo "$(date) : Arena has free spots" >> log.txt
   xdg-open "${url}158431"
-  exit
+  kill -9 %1
     ;;
 tempelhof)  echo  "$(date) : tempelhof has free spots" >> log.txt
   xdg-open "${url}158433"
-  exit
+  kill -9 %1
     ;;
 messe)  echo  "$(date) : Messe has free spots" >> log.txt
   xdg-open "${url}158434"
-  exit
+  kill -9 %1
     ;;
 velodrom) echo  "$(date) : Velodrom has free spots" >> log.txt
   xdg-open "${url}158435"
    ;;
 tegel) echo  "$(date) : Tegel has free spots" >> log.txt
   xdg-open "${url}158436"
-  exit
+  kill -9 %1
    ;;
 erika) echo  "$(date) : erika has free spots" >> log.txt
   xdg-open "${url}158437"
-  exit
+  kill -9 %1
    ;;
 *) echo "No free spots sorry!"
    ;;
