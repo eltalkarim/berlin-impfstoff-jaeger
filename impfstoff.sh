@@ -1,6 +1,6 @@
 #!/bin/sh
 
-id=$(curl -s https://api.impfstoff.link/\?v\=0.3 | jq -r '.[][] | select(.open==true) | .id')
+id=$(curl https://api.impfstoff.link/?robot=1 | jq -r '.stats | .[] | select(.open==true) | .id')
 url="https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-"
 echo $id
 
